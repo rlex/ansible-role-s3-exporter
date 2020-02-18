@@ -1,0 +1,5 @@
+- name: restart s3 exporter
+  systemd:
+    daemon_reload: true
+    name: s3-exporter
+    state: restarted
